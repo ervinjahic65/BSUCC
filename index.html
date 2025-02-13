@@ -403,8 +403,8 @@
                                     <div class="elementor-widget-container">
                                         <div class="elementor-swiper">
                                             <div class="elementor-main-swiper swiper swiper-initialized swiper-horizontal swiper-pointer-events swiper-backface-hidden">
-                                                <div class="swiper-wrapper" id="swiper-wrapper-7285ee174f9b79c10" aria-live="off" style="cursor: grab; transition-duration: 0ms; transform: translate3d(-2616px, 0px, 0px);">
-                                                    <div class="swiper-slide swiper-slide-duplicate swiper-slide-duplicate-active" data-swiper-slide-index="3" style="width: 638px; margin-right: 16px;" role="group" aria-label="4 / 4">
+                                                <div class="swiper-wrapper" id="swiper-wrapper-7285ee174f9b79c10" aria-live="off" style="cursor: grab; transition-duration: 0ms;">
+                                                    <div class="swiper-slide swiper-slide-duplicate swiper-slide-duplicate-active" data-swiper-slide-index="3"  role="group" aria-label="4 / 4">
                                                         <div class="elementor-testimonial elementor-repeater-item-348caf0">
                                                             <div class="elementor-testimonial__header">
                                                                 <cite class="elementor-testimonial__cite">
@@ -420,7 +420,7 @@
                                                             </div>
                                                         </div>
                                                     </div>
-                                                    <div class="swiper-slide swiper-slide-duplicate-next" data-swiper-slide-index="0" style="width: 638px; margin-right: 16px;" role="group" aria-label="1 / 4">
+                                                    <div class="swiper-slide swiper-slide-duplicate-next" data-swiper-slide-index="0"  role="group" aria-label="1 / 4">
                                                         <div class="elementor-testimonial elementor-repeater-item-524233e">
                                                             <div class="elementor-testimonial__header">
                                                                 <cite class="elementor-testimonial__cite">
@@ -436,7 +436,7 @@
                                                             </div>
                                                         </div>
                                                     </div>
-                                                    <div class="swiper-slide" data-swiper-slide-index="1" style="width: 638px; margin-right: 16px;" role="group" aria-label="2 / 4">
+                                                    <div class="swiper-slide" data-swiper-slide-index="1"  role="group" aria-label="2 / 4">
                                                         <div class="elementor-testimonial elementor-repeater-item-1618768">
                                                             <div class="elementor-testimonial__header">
                                                                 <cite class="elementor-testimonial__cite">
@@ -452,7 +452,7 @@
                                                             </div>
                                                         </div>
                                                     </div>
-                                                    <div class="swiper-slide swiper-slide-prev" data-swiper-slide-index="2" style="width: 638px; margin-right: 16px;" role="group" aria-label="3 / 4">
+                                                    <div class="swiper-slide swiper-slide-prev" data-swiper-slide-index="2"  role="group" aria-label="3 / 4">
                                                         <div class="elementor-testimonial elementor-repeater-item-9a43d92">
                                                             <div class="elementor-testimonial__header">
                                                                 <cite class="elementor-testimonial__cite">
@@ -468,7 +468,7 @@
                                                             </div>
                                                         </div>
                                                     </div>
-                                                    <div class="swiper-slide swiper-slide-active" data-swiper-slide-index="3" style="width: 638px; margin-right: 16px;" role="group" aria-label="4 / 4">
+                                                    <div class="swiper-slide swiper-slide-active" data-swiper-slide-index="3"  role="group" aria-label="4 / 4">
                                                         <div class="elementor-testimonial elementor-repeater-item-348caf0">
                                                             <div class="elementor-testimonial__header">
                                                                 <cite class="elementor-testimonial__cite">
@@ -484,7 +484,7 @@
                                                             </div>
                                                         </div>
                                                     </div>
-                                                    <div class="swiper-slide swiper-slide-duplicate swiper-slide-next" data-swiper-slide-index="0" role="group" aria-label="1 / 4" style="width: 638px; margin-right: 16px;">
+                                                    <div class="swiper-slide swiper-slide-duplicate swiper-slide-next" data-swiper-slide-index="0" role="group" aria-label="1 / 4" >
                                                         <div class="elementor-testimonial elementor-repeater-item-524233e">
                                                             <div class="elementor-testimonial__header">
                                                                 <cite class="elementor-testimonial__cite">
@@ -659,5 +659,20 @@
                 </div>
             </section>
         </div>
+		<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+		<script>
+			// Initialize Swiper
+			const swiper = new Swiper('.swiper', {
+					loop: true,
+					autoplay: {
+					delay: 4000,
+					disableOnInteraction: false,
+					},
+					pagination: {
+					el: '.swiper-pagination',
+					clickable: true,
+				}
+			});
+		</script>
     </body>
 </html>
